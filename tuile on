@@ -1,0 +1,38 @@
+<style> 
+.bg-textjar {     
+background-color: #424242;
+padding: 0px 0px 0px 0px;     
+position: relative;     
+width: 400px;
+height: 70px;
+overflow: hidden; } 
+
+.bg-textjar::after {     
+color: grey;
+content: attr(data-bg-text);     
+display: block;     
+font-size: 2em;     
+line-height: 1;     
+position: absolute;     
+bottom: 0;     
+text-align: right; 	
+width:100%; 	
+word-break: normal; 
+opacity : 1;
+transition: all 3s;
+overflow: hidden;
+padding-right:20px;
+}
+
+.bg-textjar:active:after {
+
+  opacity : 1;
+  transition: 0s;
+  text-shadow: 0 0 10px white;
+  color:#424242;
+}
+
+</style> 
+
+<div class="bg-textjar" data-bg-text="Plex scene off"><div style="bottom:20;transform: rotate(-5deg); width:400px; text-align:left; padding-left:20px; font-size:4em; color:#2a2a2a;" class="nature-tree101">tree</div>
+</div>
